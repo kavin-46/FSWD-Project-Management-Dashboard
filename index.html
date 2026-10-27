@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Project Management Dashboard</h1>
+
+    <div class="dashboard">
+        <div class="box">
+            <h3>Total Tasks</h3>
+            <p id="total">0</p>
+        </div>
+
+        <div class="box">
+            <h3>Pending</h3>
+            <p id="pending">0</p>
+        </div>
+
+        <div class="box">
+            <h3>In Progress</h3>
+            <p id="progress">0</p>
+        </div>
+
+        <div class="box">
+            <h3>Completed</h3>
+            <p id="completed">0</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Add New Task</h2>
+
+        <input type="text" id="taskName"
+               placeholder="Enter task name">
+
+        <button onclick="addTask()">Add Task</button>
+
+        <h2>Task List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Status</th>
+                    <th>Change Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="taskList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
